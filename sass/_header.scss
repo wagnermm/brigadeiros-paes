@@ -1,0 +1,29 @@
+header {
+    background: url(../images/background-header.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 250px;
+        height: 220px;
+        border-radius: 100%;
+    }
+    .midias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        margin-right: 3rem;
+        i {
+            font-size: 4rem;
+            padding: 0.5rem;
+            color: $tertiary-color;
+            background: $bg-color-primary;
+            border-radius: 1rem;
+        }
+    }
+}

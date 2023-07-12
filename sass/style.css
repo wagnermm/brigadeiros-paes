@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+header {
+  background: url(../images/background-header.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  width: 250px;
+  height: 220px;
+  border-radius: 100%;
+}
+header .midias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-right: 3rem;
+}
+header .midias i {
+  font-size: 4rem;
+  padding: 0.5rem;
+  color: #fff;
+  background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
+  border-radius: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
+  display: flex;
+  justify-content: center;
+}
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Oleo Script Swash Caps";
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
