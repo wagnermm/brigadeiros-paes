@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
 header {
-  background: url(../images/background-header.jpeg);
+  background-color: #fff0ad;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 header img {
-  width: 250px;
-  height: 220px;
+  width: 230px;
+  height: 200px;
   border-radius: 100%;
 }
 header .midias {
@@ -24,7 +24,7 @@ header .midias {
 header .midias i {
   font-size: 4rem;
   padding: 0.5rem;
-  color: #fff;
+  color: #fff0ad;
   background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
   border-radius: 1rem;
 }
@@ -44,6 +44,7 @@ html {
 
 .navbar {
   width: 100%;
+  height: 6vh;
   background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
   display: flex;
   justify-content: center;
@@ -58,7 +59,17 @@ html {
 }
 .navbar ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #fff0ad;
   font-family: "Oleo Script Swash Caps";
   font-size: 2rem;
+}
+.navbar ul li a:hover {
+  text-shadow: 0 0 1px;
+}
+
+.carousel-caption h2 {
+  font-size: 4rem;
+  font-family: "Oleo Script Swash Caps";
+  color: #fff0ad;
+  text-shadow: 0 1px 1px #000;
 }/*# sourceMappingURL=style.css.map */
