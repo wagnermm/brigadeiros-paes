@@ -5,14 +5,15 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  height: auto;
+  height: 20%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 header img {
-  width: 230px;
-  height: 200px;
+  width: 200px;
+  height: 170px;
   border-radius: 100%;
+  margin-left: 5rem;
 }
 header .midias {
   display: flex;
@@ -20,6 +21,7 @@ header .midias {
   gap: 2rem;
   align-items: center;
   margin-right: 3rem;
+  margin-right: 10%;
 }
 header .midias i {
   font-size: 4rem;
@@ -68,8 +70,55 @@ html {
 }
 
 .carousel-caption h2 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-family: "Oleo Script Swash Caps";
   color: #fff0ad;
   text-shadow: 0 1px 1px #000;
+}
+
+#products {
+  width: 100%;
+  height: 100%;
+  background-color: #fff0ad;
+  text-align: center;
+}
+#products h2 {
+  margin-top: 12rem;
+  font-family: "Oleo Script Swash Caps";
+  background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5rem;
+}
+#products .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+#products .cards-container .cards {
+  margin-top: 5rem;
+  width: 31%;
+}
+#products .cards-container .cards img {
+  width: 100%;
+  height: 250px;
+}
+#products .cards-container .cards .produto {
+  height: auto;
+  background: #fff;
+  padding: 2rem;
+}
+#products .cards-container .cards .produto h5, #products .cards-container .cards .produto p {
+  color: #220404;
+  font-family: "Oleo Script Swash Caps";
+}
+#products .cards-container .cards .produto h5 {
+  font-size: 1.8rem;
+}
+#products .cards-container .cards .produto p {
+  font-size: 1.4rem;
+}
+#products .cards-container .cards .produto .btn {
+  background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
+  color: #fff0ad;
 }/*# sourceMappingURL=style.css.map */

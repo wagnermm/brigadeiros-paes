@@ -30,47 +30,109 @@
             <li><a href="#contact">Contato</a></li>
         </ul>
     </nav>
-    <div class="row">
-        <div class="col-md-12 col-sm-12" >
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="ratio ratio-21x9">
-                            <img src="./images/img-slide1.jpg" class="d-block w-100" alt="background-img">
+    <section class="banner">
+        <div class="row">
+            <div class="col-md-12 col-sm-12" >
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ratio ratio-21x9">
+                                <img src="./images/img-slide1.jpg" class="d-block w-100" alt="background-img">
+                            </div>
+                            <div class="carousel-caption">
+                                <h2>Os melhores brigadeiros da cidade</h2>
+                            </div>
                         </div>
-                        <div class="carousel-caption">
-                            <h2>Os melhores brigadeiros da cidade</h2>
+                        <div class="carousel-item">
+                            <div class="ratio ratio-21x9">
+                                <img src="./images/img-slide2.jpg" class="d-block w-100" alt="background-img">
+                            </div>
+                            <div class="carousel-caption">
+                                <h2>Bem perto de você</h2>
+                            </div>
+                        </div>   
+                        <div class="carousel-item">
+                            <div class="ratio ratio-21x9">
+                                <img src="./images/img-slide3.jpg" class="d-block w-100" alt="background-img">
+                            </div>
+                            <div class="carousel-caption">
+                                <h2>Entre em contato e peça já o seu</h2>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="ratio ratio-21x9">
-                            <img src="./images/img-slide2.jpg" class="d-block w-100" alt="background-img">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cards-title">
+                        <h2>Destaques</h2>
+                    </div>
+                    <div class="cards-container">
+                        <div class="cards">
+                            <img src="./images/brigadeiro.jpg" alt="brigadeiro">
+                            <div class="produto">
+                                <h5>Brigadeiro Belga</h5>
+                                <p>Uma versão aprimorada do brigadeiro. Preparado com chocolate belga de alta qualidade, leite condensado e manteiga, resultando em uma textura cremosa e um sabor intenso de chocolate.</p>
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                            </div>
                         </div>
-                        <div class="carousel-caption">
-                            <h2>Bem perto de você</h2>
+                        <div class="cards">
+                            <img src="./images/pacoca.jpg" alt="brigadeiro-paçoca">
+                            <div class="produto">
+                                <h5>Brigadeiro de paçoca</h5>
+                                <p>Paçoca e brigadeiro estão entre os doces mais saborosos que existem, e juntos formam uma perfeita combinação de sabor e textura, todos reunidos em um único brigadeiro.</p><br>
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                            </div>
                         </div>
-                    </div>   
-                    <div class="carousel-item">
-                        <div class="ratio ratio-21x9">
-                            <img src="./images/img-slide3.jpg" class="d-block w-100" alt="background-img">
+                        <div class="cards">
+                            <img src="./images/copinhos.jpg" alt="copinhos">
+                            <div class="produto">
+                                <h5>Copinhos de chocolate</h5>
+                                <p>O copinho de chocolate é um doce delicioso que tem feito sucesso nas festas. Ele pode ser recheado com diversos sabores diferentes: brigadeiro, beijinho, chantilly, mousse de maracujá, doce de leite, creme de nozes.</p>
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                            </div>
                         </div>
-                        <div class="carousel-caption">
-                            <h2>Entre em contato e peça já o seu</h2>
+                        <div class="cards">
+                            <img src="./images/bolacha.jpg" alt="bolacha">
+                            <div class="produto">
+                                <h5>Brigadeiro de oreo</h5>
+                                <p>O sabor de ums dos mais deliciosos biscoitos em um brigadeiro, vamos nos surpreender a cada mordida que nos trará as sensações agradáveis de comemorações, lembrando o doce típico da culinária brasileira.</p>
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="./images/maracuja.jpg" alt="copinhos">
+                            <div class="produto">
+                                <h5>Brigadeiro de maracujá</h5>
+                                <p>Uma versão diferente do brigadeiro tradicional, porém não menos delicioso, temos o brigadeiro de maracujá. O passo a passo é simples e com apenas de 3 ingredientes: suco de maracujá, leite condensado e a manteiga.</p>
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="./images/frutas.jpg" alt="copinhos">
+                            <div class="produto">
+                                <h5>Brigadeiro com frutos</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem natus pariatur nostrum iure temporibus. Eaque illum impedit possimus cupiditate qui illo quisquam suscipit iure modi.</p>
+                                <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-    </div>
-
+    </section>
     <script src="https://kit.fontawesome.com/cc8f61138a.js" crossorigin="anonymous"></script>
     <script src="./vendor/bootstrap/js/bootstrap.js"></script>
     <script src="./javascript/script.js"></script>
