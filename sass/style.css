@@ -27,7 +27,7 @@ header .midias i {
   font-size: 4rem;
   padding: 0.5rem;
   color: #fff0ad;
-  background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
+  background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   border-radius: 1rem;
 }
 
@@ -47,7 +47,7 @@ html {
 .navbar {
   width: 100%;
   height: 6vh;
-  background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
+  background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   display: flex;
   justify-content: center;
 }
@@ -77,8 +77,6 @@ html {
 }
 
 #products {
-  width: 100%;
-  height: 100%;
   background-color: #fff0ad;
   text-align: center;
 }
@@ -113,12 +111,39 @@ html {
   font-family: "Oleo Script Swash Caps";
 }
 #products .cards-container .cards .produto h5 {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 #products .cards-container .cards .produto p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 #products .cards-container .cards .produto .btn {
-  background: linear-gradient(0deg, rgb(128, 3, 23) 0%, rgb(34, 4, 4) 100%);
+  background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   color: #fff0ad;
+}
+
+.modal-container .modal-body {
+  font-size: 1.8rem;
+}
+.modal-container .modal-footer .btn {
+  background: #800317;
+}
+.modal-container .btn-container {
+  margin-top: 5rem;
+  text-align: center;
+}
+.modal-container .btn-container .btn-modal {
+  width: 180px;
+  height: 60px;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #800317;
+}
+.modal-container .btn-container .btn-modal:hover {
+  background: #610111;
+}
+.modal-container .btn-container .btn-modal a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

@@ -13,7 +13,7 @@
             a {
                 text-decoration: none;
                 color: $tertiary-color;
-                font-family: 'Oleo Script Swash Caps';
+                font-family: $text-font;
                 font-size: 2rem;
                 &:hover {
                     text-shadow: 0 0 1px;
