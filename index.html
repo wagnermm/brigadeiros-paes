@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon_io/favicon-16x16.png">
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
     <link rel="stylesheet" href="./sass/style.css">
     <title>Brigadeiros D Paes</title>
 </head>
@@ -26,10 +27,105 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">Sobre Nós</a></li>
-            <li><a href="#products">Produtos</a></li>
+            <li><a href="#products" id="products-visible">Produtos</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
     </nav>
+    <section id="products">
+        <div class="featured-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 md-12" id="carousel-title">
+                        <div class="line-up">
+                            <h1 id="sobre">Nossos Produtos</h1>
+                            <div class="close">X</div>
+                        </div>
+                    </div>
+                    <div class="col-12 md-12" id="carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="featured-item">
+                                <img src="./images/brigadeiro.jpg" alt="Item 1">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/brigadeiro1.jpg" alt="Item 2">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce1.jpg" alt="Item 3">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce3.jpg" alt="Item 4">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce4.jpg" alt="Item 5">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce5.jpg" alt="Item 6">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce7.jpg" alt="Item 7">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce10.jpg" alt="Item 8">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="pedir-agora">
+                            <h1>Gostou?<br> Então peça já pelo nosso whatsapp</h1>
+                            <div class="pedir-contato">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <p>9999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 md-12" id="carousel">
+                        <div class="owl-carousel owl-theme">
+                            <div class="featured-item">
+                                <img src="./images/doce11.jpg" alt="Item 1">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce12.jpg" alt="Item 2">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce13.jpg" alt="Item 3">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/bolacha.jpg" alt="Item 4">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce14.jpg" alt="Item 5">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce15.jpg" alt="Item 6">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/meio-amargo.jpg" alt="Item 7">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                            <div class="featured-item">
+                                <img src="./images/doce16.jpg" alt="Item 8">
+                                <h4>Brigadeiro nome</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="banner">
         <div class="row">
             <div class="col-md-12 col-sm-12" >
@@ -72,7 +168,7 @@
             </div>
         </div>
     </section>
-    <section id="products">
+    <section class="featured">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -113,7 +209,7 @@
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/maracuja.jpg" alt="copinhos">
+                            <img src="./images/maracuja.jpg" alt="brigadeiro-maracuja">
                             <div class="produto">
                                 <h5>Brigadeiro de maracujá</h5>
                                 <p>Uma versão diferente do brigadeiro tradicional, porém não menos delicioso, temos o brigadeiro de maracujá. O passo a passo é simples e com apenas de 3 ingredientes: suco de maracujá, leite condensado e a manteiga.</p>
@@ -121,7 +217,7 @@
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/frutas.jpg" alt="copinhos">
+                            <img src="./images/frutas.jpg" alt="brigadeiros-frutas">
                             <div class="produto">
                                 <h5>Brigadeiros artesanais</h5>
                                 <p>Brigadeiros especiais preparados com uma variedades de frutas a gosto do nosso cliente. Com uma excelente combinação de cores das frutas com brigadeiro torna-se ideal para decorações de mesas.</p>
@@ -282,7 +378,7 @@
             </div>
         </div>
         <div class="btn-container">
-            <button type="button" class="btn-modal"><a href="#products">Mais produtos</a></button>
+            <button type="button" class="btn-modal"><a href="#products" id="products-visible-btn">Mais produtos</a></button>
         </div>
     </div>
     <section class="curiosidades">
@@ -309,6 +405,9 @@
     <footer id="contact">
         <div class="row">
             <div class="col-12">
+                <div class="top">
+                    <a href="#top">Voltar ao topo</a>
+                </div>
                 <div class="line-footer">
                     <div class="line-center"></div>
                 </div>
@@ -344,6 +443,8 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/cc8f61138a.js" crossorigin="anonymous"></script>
+    <script src="./vendor/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./vendor/owl/js/owl.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.js"></script>
     <script src="./javascript/script.js"></script>
 </body>

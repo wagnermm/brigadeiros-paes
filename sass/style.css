@@ -76,10 +76,10 @@ html {
   text-shadow: 0 1px 1px #000;
 }
 
-#products {
+.featured {
   text-align: center;
 }
-#products h2 {
+.featured h2 {
   margin-top: 12rem;
   font-family: "Oleo Script Swash Caps";
   background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
@@ -87,41 +87,45 @@ html {
   -webkit-text-fill-color: transparent;
   font-size: 5rem;
 }
-#products .cards-container {
+.featured .cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
-#products .cards-container .cards {
+.featured .cards-container .cards {
   margin-top: 5rem;
   width: 31%;
 }
-#products .cards-container .cards img {
+.featured .cards-container .cards img {
   width: 100%;
   height: 250px;
 }
-#products .cards-container .cards .produto {
+.featured .cards-container .cards .produto {
   height: auto;
   padding: 2rem;
 }
-#products .cards-container .cards .produto h5, #products .cards-container .cards .produto p {
+.featured .cards-container .cards .produto h5, .featured .cards-container .cards .produto p {
   color: #220404;
   font-family: "Oleo Script Swash Caps";
 }
-#products .cards-container .cards .produto h5 {
+.featured .cards-container .cards .produto h5 {
   font-size: 2rem;
 }
-#products .cards-container .cards .produto p {
+.featured .cards-container .cards .produto p {
   font-size: 1.6rem;
   letter-spacing: 0.5px;
 }
-#products .cards-container .cards .produto .btn {
+.featured .cards-container .cards .produto .btn {
   background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   color: #fff;
 }
 
 .modal-container .modal-body {
   font-size: 1.8rem;
+}
+.modal-container .modal-body h5 {
+  color: #800317;
+  font-size: 2rem;
 }
 .modal-container .modal-footer .btn {
   background: #800317;
@@ -163,8 +167,6 @@ html {
 }
 .curiosidades #background {
   background: rgba(34, 4, 4, 0.8);
-  width: 100%;
-  height: 100%;
 }
 .curiosidades #background h1, .curiosidades #background h5 {
   font-family: "Oleo Script Swash Caps";
@@ -178,8 +180,9 @@ html {
 }
 
 .about {
-  margin-top: 3rem;
   font-family: "Oleo Script Swash Caps";
+  padding: 3rem;
+  background: #fff0ad;
   color: #220404;
 }
 .about #confeiteiro {
@@ -192,6 +195,7 @@ html {
 }
 .about #confeiteiro img {
   width: 400px;
+  box-shadow: 1px 1px 1px #220404;
 }
 .about #sobre {
   display: flex;
@@ -259,4 +263,94 @@ html {
   color: #220404;
   background: #fff0ad;
   border-radius: 1rem;
+}
+#contact .top {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+#contact .top a {
+  text-decoration: none;
+  color: #fff0ad;
+  font-family: "Oleo Script Swash Caps";
+}
+#contact .top a:hover {
+  text-shadow: 0 1px 1px #fff0ad;
+}
+
+#products {
+  position: fixed;
+  top: 0;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 5rem;
+  background-color: #fff0ad;
+  font-family: "Oleo Script Swash Caps";
+  z-index: 2;
+  visibility: hidden;
+}
+#products #carousel-title {
+  color: #800317;
+}
+#products #carousel-title .line-up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#products #carousel-title .line-up .close {
+  background: #800317;
+  color: #fff0ad;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#products #carousel-title .line-up .close:hover {
+  background: #610211;
+}
+#products #carousel-title h1 {
+  font-size: 6rem;
+}
+#products #carousel {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+#products #carousel img {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 1rem;
+}
+#products #carousel h4 {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+#products .pedir-agora {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #800317;
+}
+#products .pedir-agora h1 {
+  font-size: 2.5rem;
+}
+#products .pedir-agora .pedir-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#products .pedir-agora .pedir-contato i {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+#products .pedir-agora .pedir-contato p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */

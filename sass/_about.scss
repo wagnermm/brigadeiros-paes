@@ -1,6 +1,7 @@
 .about {
-    margin-top: 3rem;
     font-family: $text-font;
+    padding: 3rem;
+    background: $tertiary-color;
     color: $primary-color;
     #confeiteiro {
         display: flex;
@@ -11,6 +12,7 @@
         padding: 5rem;
         img {
             width: 400px;
+            box-shadow: 1px 1px 1px $primary-color;
         }
     }
     #sobre {

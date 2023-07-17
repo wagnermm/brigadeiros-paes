@@ -48,4 +48,17 @@
             border-radius: 1rem;
         }
     }
+    .top {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $tertiary-color;
+            font-family: $text-font;
+            &:hover {
+                text-shadow: 0 1px 1px $tertiary-color;
+            }
+        }
+    }
 }

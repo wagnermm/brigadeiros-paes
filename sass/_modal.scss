@@ -1,6 +1,10 @@
 .modal-container {
     .modal-body {
         font-size: 1.8rem;
+        h5 {
+            color: $main-color;
+            font-size: 2rem;
+        }
     }
     .modal-footer {
         .btn {
