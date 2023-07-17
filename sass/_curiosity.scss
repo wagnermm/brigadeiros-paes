@@ -1,0 +1,27 @@
+.curiosidades {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/brigadeiro-background.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+    color: $tertiary-color;
+    #background {
+        background: rgba(34, 4, 4, 0.8);
+        h1, h5 {
+            font-family: $text-font;
+        }
+        h1 {
+            font-size: 5rem;
+        }
+        h5 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+}

@@ -1,5 +1,4 @@
 #products {
-    background-color: $tertiary-color;
     text-align: center;
     h2 {
         margin-top: 12rem;
@@ -22,7 +21,6 @@
             }
             .produto {
                 height: auto;
-                background: #fff;
                 padding: 2rem;
                 h5, p {
                     color: $primary-color;
@@ -33,10 +31,11 @@
                 }
                 p {
                     font-size: 1.6rem;
+                    letter-spacing: 0.5px;
                 }
                 .btn {
                     background: $bg-color-primary;
-                    color: $tertiary-color;
+                    color: #fff;
                 }
             }
         }

@@ -77,7 +77,6 @@ html {
 }
 
 #products {
-  background-color: #fff0ad;
   text-align: center;
 }
 #products h2 {
@@ -103,7 +102,6 @@ html {
 }
 #products .cards-container .cards .produto {
   height: auto;
-  background: #fff;
   padding: 2rem;
 }
 #products .cards-container .cards .produto h5, #products .cards-container .cards .produto p {
@@ -115,10 +113,11 @@ html {
 }
 #products .cards-container .cards .produto p {
   font-size: 1.6rem;
+  letter-spacing: 0.5px;
 }
 #products .cards-container .cards .produto .btn {
   background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
-  color: #fff0ad;
+  color: #fff;
 }
 
 .modal-container .modal-body {
@@ -146,4 +145,118 @@ html {
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
+}
+
+.curiosidades {
+  margin-top: 5rem;
+  width: 100%;
+  height: auto;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url(../images/brigadeiro-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff0ad;
+}
+.curiosidades #background {
+  background: rgba(34, 4, 4, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.curiosidades #background h1, .curiosidades #background h5 {
+  font-family: "Oleo Script Swash Caps";
+}
+.curiosidades #background h1 {
+  font-size: 5rem;
+}
+.curiosidades #background h5 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.about {
+  margin-top: 3rem;
+  font-family: "Oleo Script Swash Caps";
+  color: #220404;
+}
+.about #confeiteiro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+}
+.about #confeiteiro img {
+  width: 400px;
+}
+.about #sobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.about #sobre h2 {
+  font-size: 4rem;
+}
+.about #sobre h5 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+#contact {
+  width: 100%;
+  padding: 4rem;
+  background-color: #220404;
+}
+#contact .line-footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+#contact .line-footer .line-center {
+  width: 100%;
+  border-bottom: 1px solid #fff0ad;
+}
+#contact .menus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: #fff0ad;
+}
+#contact .menus .endereco, #contact .menus .atendimento,
+#contact .menus .pedido, #contact .menus .entregas {
+  text-align: center;
+  width: 25%;
+}
+#contact .menus .endereco h2, #contact .menus .atendimento h2,
+#contact .menus .pedido h2, #contact .menus .entregas h2 {
+  font-size: 2rem;
+}
+#contact .menus .endereco p, #contact .menus .atendimento p,
+#contact .menus .pedido p, #contact .menus .entregas p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+#contact .midias-footer {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+#contact .midias-footer i {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #220404;
+  background: #fff0ad;
+  border-radius: 1rem;
 }/*# sourceMappingURL=style.css.map */

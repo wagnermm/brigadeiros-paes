@@ -1,0 +1,29 @@
+.about {
+    margin-top: 3rem;
+    font-family: $text-font;
+    color: $primary-color;
+    #confeiteiro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        img {
+            width: 400px;
+        }
+    }
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        h2 {
+            font-size: 4rem;
+        }
+        h5 {
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+    }
+}
