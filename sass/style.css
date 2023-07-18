@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
 header {
   background-color: #fff0ad;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   width: 100%;
   height: 20%;
   display: flex;
@@ -21,7 +18,6 @@ header .midias {
   gap: 2rem;
   align-items: center;
   margin-right: 3rem;
-  margin-right: 10%;
 }
 header .midias i {
   font-size: 4rem;
@@ -351,8 +347,12 @@ body {
 }
 #products #carousel h4 {
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #220404;
+}
+#products #carousel p {
+  font-size: 1.6rem;
+  color: #039dc4;
 }
 #products .owl-prev, #products .owl-next {
   font-size: 8rem;
@@ -364,20 +364,21 @@ body {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  color: #800317;
+  color: #220404;
 }
 #products .pedir-agora h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 #products .pedir-agora .pedir-contato {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 #products .pedir-agora .pedir-contato i {
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
 #products .pedir-agora .pedir-contato p {
@@ -414,11 +415,11 @@ body {
 }
 #products #contact-product .menus .endereco h2, #products #contact-product .menus .atendimento h2,
 #products #contact-product .menus .pedido h2, #products #contact-product .menus .entregas h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 #products #contact-product .menus .endereco p, #products #contact-product .menus .atendimento p,
 #products #contact-product .menus .pedido p, #products #contact-product .menus .entregas p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   letter-spacing: 1px;
 }
 #products #contact-product .midias-footer {
@@ -450,4 +451,28 @@ body {
 }
 #products #contact-product .top a:hover {
   text-shadow: 0 1px 1px #fff0ad;
+}
+
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  header img {
+    width: 150px;
+    height: 110px;
+    margin: 0;
+  }
+  header .midias {
+    margin: 0;
+  }
+  header .midias i {
+    font-size: 2rem;
+  }
+  .navbar {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
