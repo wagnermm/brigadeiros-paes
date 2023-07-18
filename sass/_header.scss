@@ -24,4 +24,8 @@ header {
             border-radius: 1rem;
         }
     }
+    .menu-mobile, .btn-mobile {
+        visibility: hidden;
+        display: none;
+    }
 }
