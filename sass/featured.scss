@@ -12,6 +12,7 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
+        margin-bottom: 5rem;
         .cards {
             margin-top: 5rem;
             width: 31%;
@@ -22,21 +23,36 @@
             .produto {
                 height: auto;
                 padding: 2rem;
-                h5, p {
-                    color: $primary-color;
-                    font-family: $text-font;
-                }
+                color: $main-color;
                 h5 {
                     font-size: 2rem;
-                }
-                p {
-                    font-size: 1.6rem;
-                    letter-spacing: 0.5px;
+                    font-family: $text-font;
                 }
                 .btn {
+                    margin-top: 2rem;
                     background: $bg-color-primary;
                     color: #fff;
                 }
+            }
+        }
+    }
+    .btn-container {
+        margin-top: 5rem;
+        text-align: center;
+        .btn-modal {
+            width: 180px;
+            height: 60px;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            background: $bg-color-primary;
+            &:hover {
+                background: #610111;
+            }
+            a {
+                font-size: 2rem;
+                text-decoration: none;
+                color: #fff;
             }
         }
     }

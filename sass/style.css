@@ -44,6 +44,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #fff0ad;
+}
+
 .navbar {
   width: 100%;
   height: 6vh;
@@ -91,6 +95,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-bottom: 5rem;
 }
 .featured .cards-container .cards {
   margin-top: 5rem;
@@ -103,52 +108,56 @@ html {
 .featured .cards-container .cards .produto {
   height: auto;
   padding: 2rem;
-}
-.featured .cards-container .cards .produto h5, .featured .cards-container .cards .produto p {
-  color: #220404;
-  font-family: "Oleo Script Swash Caps";
+  color: #800317;
 }
 .featured .cards-container .cards .produto h5 {
   font-size: 2rem;
-}
-.featured .cards-container .cards .produto p {
-  font-size: 1.6rem;
-  letter-spacing: 0.5px;
+  font-family: "Oleo Script Swash Caps";
 }
 .featured .cards-container .cards .produto .btn {
+  margin-top: 2rem;
   background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   color: #fff;
 }
-
-.modal-container .modal-body {
-  font-size: 1.8rem;
-}
-.modal-container .modal-body h5 {
-  color: #800317;
-  font-size: 2rem;
-}
-.modal-container .modal-footer .btn {
-  background: #800317;
-}
-.modal-container .btn-container {
+.featured .btn-container {
   margin-top: 5rem;
   text-align: center;
 }
-.modal-container .btn-container .btn-modal {
+.featured .btn-container .btn-modal {
   width: 180px;
   height: 60px;
   padding: 1rem;
   border: none;
   border-radius: 8px;
-  background: #800317;
+  background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
 }
-.modal-container .btn-container .btn-modal:hover {
+.featured .btn-container .btn-modal:hover {
   background: #610111;
 }
-.modal-container .btn-container .btn-modal a {
+.featured .btn-container .btn-modal a {
   font-size: 2rem;
   text-decoration: none;
   color: #fff;
+}
+
+.modal-container .modal-header h4 {
+  color: #220404;
+}
+.modal-container .modal-body h5, .modal-container .modal-body h6, .modal-container .modal-body p {
+  color: #220404;
+}
+.modal-container .modal-body h5 {
+  font-size: 2rem;
+}
+.modal-container .modal-body h6 {
+  font-size: 1.4rem;
+  color: #800317;
+}
+.modal-container .modal-body p {
+  font-size: 1.6rem;
+}
+.modal-container .modal-footer .btn {
+  background: #800317;
 }
 
 .curiosidades {
@@ -159,22 +168,29 @@ html {
   display: flex;
   align-items: center;
   text-align: center;
-  background-image: url(../images/brigadeiro-background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   color: #fff0ad;
 }
-.curiosidades #background {
-  background: rgba(34, 4, 4, 0.8);
+.curiosidades #background-description {
+  background-image: url(../images/brigadeiro-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  max-width: 100%;
+  max-height: 320px;
 }
-.curiosidades #background h1, .curiosidades #background h5 {
+.curiosidades #background-description #curiosidades-text {
+  padding: 3rem;
+  background: rgba(34, 4, 4, 0.8);
+  width: 100%;
+  height: 320px;
+}
+.curiosidades #background-description #curiosidades-text h1, .curiosidades #background-description #curiosidades-text h5 {
   font-family: "Oleo Script Swash Caps";
 }
-.curiosidades #background h1 {
+.curiosidades #background-description #curiosidades-text h1 {
   font-size: 5rem;
 }
-.curiosidades #background h5 {
+.curiosidades #background-description #curiosidades-text h5 {
   font-size: 2rem;
   letter-spacing: 1px;
 }
@@ -182,7 +198,6 @@ html {
 .about {
   font-family: "Oleo Script Swash Caps";
   padding: 3rem;
-  background: #fff0ad;
   color: #220404;
 }
 .about #confeiteiro {
@@ -201,12 +216,19 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.about #sobre h2 {
-  font-size: 4rem;
+.about #sobre .about-description {
+  height: 400px;
+  padding: 3rem;
+  color: #220404;
 }
-.about #sobre h5 {
+.about #sobre .about-description h2 {
+  font-size: 4rem;
+  margin-top: 5rem;
+}
+.about #sobre .about-description h5 {
   font-size: 2rem;
   letter-spacing: 1px;
 }
@@ -301,7 +323,7 @@ html {
   align-items: center;
 }
 #products #carousel-title .line-up .close {
-  background: #800317;
+  background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
   color: #fff0ad;
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -314,6 +336,9 @@ html {
 }
 #products #carousel-title h1 {
   font-size: 6rem;
+  background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #products #carousel {
   margin-top: 8rem;
@@ -327,6 +352,11 @@ html {
 #products #carousel h4 {
   margin-top: 2rem;
   font-size: 2rem;
+  color: #220404;
+}
+#products .owl-prev, #products .owl-next {
+  font-size: 8rem;
+  color: #800317;
 }
 #products .pedir-agora {
   display: flex;
@@ -353,4 +383,71 @@ html {
 #products .pedir-agora .pedir-contato p {
   font-size: 1.6rem;
   letter-spacing: 1px;
+}
+#products #contact-product {
+  background-color: #fff0ad;
+  width: 100%;
+  padding: 4rem;
+}
+#products #contact-product .line-footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+#products #contact-product .line-footer .line-center {
+  width: 100%;
+  border-bottom: 1px solid #220404;
+}
+#products #contact-product .menus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  color: #800317;
+}
+#products #contact-product .menus .endereco, #products #contact-product .menus .atendimento,
+#products #contact-product .menus .pedido, #products #contact-product .menus .entregas {
+  text-align: center;
+  width: 25%;
+}
+#products #contact-product .menus .endereco h2, #products #contact-product .menus .atendimento h2,
+#products #contact-product .menus .pedido h2, #products #contact-product .menus .entregas h2 {
+  font-size: 2rem;
+}
+#products #contact-product .menus .endereco p, #products #contact-product .menus .atendimento p,
+#products #contact-product .menus .pedido p, #products #contact-product .menus .entregas p {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+#products #contact-product .midias-footer {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+#products #contact-product .midias-footer i {
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: #fff0ad;
+  background: #220404;
+  border-radius: 1rem;
+}
+#products #contact-product .top {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+}
+#products #contact-product .top a {
+  text-decoration: none;
+  color: #800317;
+  font-family: "Oleo Script Swash Caps";
+}
+#products #contact-product .top a:hover {
+  text-shadow: 0 1px 1px #fff0ad;
 }/*# sourceMappingURL=style.css.map */
