@@ -41,6 +41,29 @@
             }
         }
     }
+    /*About*/
+    .about {
+        #confeiteiro {
+            width: 100%;
+            img {
+                width: 150px !important;
+            }
+        }
+        #sobre {
+            width: 100%;
+            .about-description {
+                height: 300px;
+                padding: 1rem;
+                h2 {
+                    font-size: 2rem;
+                    margin-top: 0;
+                }
+                h5 {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -131,6 +154,111 @@
             width: 45% !important;
             img {
                 height: 300px;
+            }
+        }
+    }
+    /*Curiosity*/
+    .curiosidades {
+        #curiosidades-text {
+            padding: 1rem !important;
+            h1 {
+                font-size: 3rem !important;
+            }
+            h5 {
+                font-size: 1.6rem !important;
+            }
+        }
+    }
+    /*About*/
+    .about {
+        #confeiteiro {
+            width: 100%;
+            img {
+                width: 200px;
+            }
+        }
+        #sobre {
+            width: 100%;
+            .about-description {
+                height: 300px;
+                padding: 1rem;
+                h2 {
+                    font-size: 4rem;
+                    margin-top: 0;
+                }
+                h5 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    /*Footer*/
+    #contact {
+        padding: 2rem;
+        .menus {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .endereco, .atendimento,
+            .pedido, .entregas {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 3rem;
+            }
+        }
+    }
+    /*Products*/
+    #products {
+        padding: 2rem;
+        #carousel-title {
+            .line-up {
+                .close {
+                    width: 30px;
+                    font-size: 1rem;
+                }
+            }
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        #carousel {
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            img {
+                height: 100px;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        .owl-prev, .owl-next {
+            font-size: 5rem;
+            color: $main-color;
+        }
+        .pedir-agora {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #contact-product {
+            padding: 2rem;
+            .menus {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                .endereco, .atendimento,
+                .pedido, .entregas {
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 3rem;
+                }
             }
         }
     }

@@ -162,27 +162,24 @@ body {
 
 .curiosidades {
   margin-top: 5rem;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  padding: 5rem;
   display: flex;
   align-items: center;
   text-align: center;
   color: #fff0ad;
-}
-.curiosidades #background-description {
   background-image: url(../images/brigadeiro-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  max-width: 100%;
-  max-height: 320px;
+}
+.curiosidades #background-description {
+  background: rgba(34, 4, 4, 0.8);
+  width: 100vw;
+  height: 320px;
 }
 .curiosidades #background-description #curiosidades-text {
-  padding: 3rem;
-  background: rgba(34, 4, 4, 0.8);
-  width: 100%;
-  height: 320px;
+  padding: 5rem;
 }
 .curiosidades #background-description #curiosidades-text h1, .curiosidades #background-description #curiosidades-text h5 {
   font-family: "Oleo Script Swash Caps";
@@ -494,6 +491,27 @@ body {
   .featured .cards-container .cards img {
     height: 300px;
   }
+  /*About*/
+  .about #confeiteiro {
+    width: 100%;
+  }
+  .about #confeiteiro img {
+    width: 150px !important;
+  }
+  .about #sobre {
+    width: 100%;
+  }
+  .about #sobre .about-description {
+    height: 300px;
+    padding: 1rem;
+  }
+  .about #sobre .about-description h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .about #sobre .about-description h5 {
+    font-size: 1.4rem;
+  }
 }
 @media (max-width: 768px) {
   /*Header*/
@@ -581,5 +599,102 @@ body {
   }
   .cards-container .cards img {
     height: 300px;
+  }
+  /*Curiosity*/
+  .curiosidades #curiosidades-text {
+    padding: 1rem !important;
+  }
+  .curiosidades #curiosidades-text h1 {
+    font-size: 3rem !important;
+  }
+  .curiosidades #curiosidades-text h5 {
+    font-size: 1.6rem !important;
+  }
+  /*About*/
+  .about #confeiteiro {
+    width: 100%;
+  }
+  .about #confeiteiro img {
+    width: 200px;
+  }
+  .about #sobre {
+    width: 100%;
+  }
+  .about #sobre .about-description {
+    height: 300px;
+    padding: 1rem;
+  }
+  .about #sobre .about-description h2 {
+    font-size: 4rem;
+    margin-top: 0;
+  }
+  .about #sobre .about-description h5 {
+    font-size: 2rem;
+  }
+  /*Footer*/
+  #contact {
+    padding: 2rem;
+  }
+  #contact .menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #contact .menus .endereco, #contact .menus .atendimento,
+  #contact .menus .pedido, #contact .menus .entregas {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  /*Products*/
+  #products {
+    padding: 2rem;
+  }
+  #products #carousel-title .line-up .close {
+    width: 30px;
+    font-size: 1rem;
+  }
+  #products #carousel-title h1 {
+    font-size: 4rem;
+  }
+  #products #carousel {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  #products #carousel img {
+    height: 100px;
+  }
+  #products #carousel h4 {
+    font-size: 1.2rem;
+  }
+  #products #carousel p {
+    font-size: 1.4rem;
+  }
+  #products .owl-prev, #products .owl-next {
+    font-size: 5rem;
+    color: #800317;
+  }
+  #products .pedir-agora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #products #contact-product {
+    padding: 2rem;
+  }
+  #products #contact-product .menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #products #contact-product .menus .endereco, #products #contact-product .menus .atendimento,
+  #products #contact-product .menus .pedido, #products #contact-product .menus .entregas {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
