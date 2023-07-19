@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
 header {
-  background-color: #fff0ad;
+  background-color: #faeeba;
   width: 100%;
   height: 20%;
   display: flex;
@@ -22,7 +22,7 @@ header .midias {
 header .midias i {
   font-size: 4rem;
   padding: 0.5rem;
-  color: #fff0ad;
+  color: #faeeba;
   background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   border-radius: 1rem;
 }
@@ -45,12 +45,12 @@ html {
 }
 
 body {
-  background-color: #fff0ad;
+  background-color: #faeeba;
 }
 
 .navbar {
   width: 100%;
-  height: 6vh;
+  height: 5rem;
   background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
   display: flex;
   justify-content: center;
@@ -65,9 +65,9 @@ body {
 }
 .navbar ul li a {
   text-decoration: none;
-  color: #fff0ad;
+  color: #faeeba;
   font-family: "Oleo Script Swash Caps";
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .navbar ul li a:hover {
   text-shadow: 0 0 1px;
@@ -76,7 +76,7 @@ body {
 .carousel-caption h2 {
   font-size: 6rem;
   font-family: "Oleo Script Swash Caps";
-  color: #fff0ad;
+  color: #faeeba;
   text-shadow: 0 1px 1px #000;
 }
 
@@ -167,7 +167,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #fff0ad;
+  color: #faeeba;
   background-image: url(../images/brigadeiro-background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -242,7 +242,7 @@ body {
 }
 #contact .line-footer .line-center {
   width: 100%;
-  border-bottom: 1px solid #fff0ad;
+  border-bottom: 1px solid #faeeba;
 }
 #contact .menus {
   width: 100%;
@@ -250,7 +250,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 2rem;
-  color: #fff0ad;
+  color: #faeeba;
 }
 #contact .menus .endereco, #contact .menus .atendimento,
 #contact .menus .pedido, #contact .menus .entregas {
@@ -280,7 +280,7 @@ body {
   font-size: 2rem;
   padding: 0.5rem;
   color: #220404;
-  background: #fff0ad;
+  background: #faeeba;
   border-radius: 1rem;
 }
 #contact .top {
@@ -290,11 +290,11 @@ body {
 }
 #contact .top a {
   text-decoration: none;
-  color: #fff0ad;
+  color: #faeeba;
   font-family: "Oleo Script Swash Caps";
 }
 #contact .top a:hover {
-  text-shadow: 0 1px 1px #fff0ad;
+  text-shadow: 0 1px 1px #faeeba;
 }
 
 #products {
@@ -305,7 +305,7 @@ body {
   height: 100%;
   text-align: center;
   padding: 5rem;
-  background-color: #fff0ad;
+  background-color: #faeeba;
   font-family: "Oleo Script Swash Caps";
   z-index: 2;
   visibility: hidden;
@@ -321,7 +321,7 @@ body {
 }
 #products #carousel-title .line-up .close {
   background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
-  color: #fff0ad;
+  color: #faeeba;
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   width: 40px;
@@ -387,7 +387,7 @@ body {
   letter-spacing: 1px;
 }
 #products #contact-product {
-  background-color: #fff0ad;
+  background-color: #faeeba;
   width: 100%;
   padding: 4rem;
 }
@@ -436,7 +436,7 @@ body {
 #products #contact-product .midias-footer i {
   font-size: 2rem;
   padding: 0.5rem;
-  color: #fff0ad;
+  color: #faeeba;
   background: #220404;
   border-radius: 1rem;
 }
@@ -451,7 +451,7 @@ body {
   font-family: "Oleo Script Swash Caps";
 }
 #products #contact-product .top a:hover {
-  text-shadow: 0 1px 1px #fff0ad;
+  text-shadow: 0 1px 1px #faeeba;
 }
 
 @media (max-width: 480px) {
@@ -477,7 +477,7 @@ body {
   .carousel-caption h2 {
     font-size: 2.5rem !important;
     font-family: "Oleo Script Swash Caps";
-    color: #fff0ad;
+    color: #faeeba;
     text-shadow: 0 1px 1px #000;
   }
   /*Featured*/
@@ -574,13 +574,13 @@ body {
     letter-spacing: 1px;
     font-family: "Oleo Script Swash Caps";
     font-weight: bolder;
-    color: #fff0ad;
+    color: #faeeba;
     text-decoration: none;
   }
   .menu-mobile .close-menu {
     width: 5rem;
     border-radius: 1rem;
-    background: #fff0ad;
+    background: #faeeba;
     color: #800317;
     font-size: 2rem;
     font-weight: bolder;
@@ -590,7 +590,7 @@ body {
   .carousel-caption h2 {
     font-size: 4rem;
     font-family: "Oleo Script Swash Caps";
-    color: #fff0ad;
+    color: #faeeba;
     text-shadow: 0 1px 1px #000;
   }
   /*Featured*/
