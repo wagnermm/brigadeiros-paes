@@ -159,13 +159,16 @@
     }
     /*Curiosity*/
     .curiosidades {
-        #curiosidades-text {
-            padding: 1rem !important;
-            h1 {
-                font-size: 3rem !important;
-            }
-            h5 {
-                font-size: 1.6rem !important;
+        #background-description {
+            width: 900px;
+            #curiosidades-text {
+                padding: 1rem !important;
+                h1 {
+                    font-size: 3rem !important;
+                }
+                h5 {
+                    font-size: 1.6rem !important;
+                }
             }
         }
     }
