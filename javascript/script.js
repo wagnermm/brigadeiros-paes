@@ -32,6 +32,6 @@ var openMobile = document.querySelector('.btn-mobile').addEventListener('click',
     document.querySelector('.menu-mobile').style.visibility="visible"
 });
 
-var closeMobile = document.querySelector('.close-menu').addEventListener('click', function() {
+var closeMobile = document.querySelector('.close-menu, .menu-mobile').addEventListener('click', function() {
     document.querySelector('.menu-mobile').style.visibility="hidden"
 });
