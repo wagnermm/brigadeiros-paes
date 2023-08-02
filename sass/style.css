@@ -342,7 +342,7 @@ body {
   margin-bottom: 8rem;
 }
 #products #carousel img {
-  width: 100%;
+  width: auto;
   height: 250px;
   margin-bottom: 1rem;
 }
