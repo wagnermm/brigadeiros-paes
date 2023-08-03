@@ -8,9 +8,8 @@ header {
         width: 200px;
         height: 170px;
         border-radius: 100%;
-        margin-left: 5rem;
     }
-    .midias {
+  /*  .midias {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
@@ -22,6 +21,35 @@ header {
             color: $tertiary-color;
             background: $bg-color-primary;
             border-radius: 1rem;
+        }
+    }
+    */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-right: 1rem;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5rem;
+            li {
+                list-style: none;
+                a {
+                    text-decoration: none;
+                    background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgba(34,4,4,1) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    font-family: $text-font;
+                    font-size: 3rem;
+                    &:hover {
+                        background: $main-color;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
         }
     }
     .menu-mobile, .btn-mobile {

@@ -71,7 +71,7 @@
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         text-align: center;
         img {
@@ -79,66 +79,69 @@
             height: 150px;
             margin: 0;
         }
+        /*
         .midias {
             margin: 0;
             i {
                 font-size: 3rem;
             }
         }
-    }
-    /*Nav Menu*/
-    .navbar {
-        display: none;
-    }
-    .btn-mobile {
-        display: block !important;
-    }
-    .btn-mobile div{
-        visibility: visible;
-        width: 3rem;
-        height: 0.5rem;
-        margin: 0.5rem;
-        background: $main-color;
-    }
-    .menu-mobile {
-        display: flex !important;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        font-size: 1.4rem;
-        background-color: $main-color;
-        opacity: 0.95;
-        z-index: 2;
-        li {
-            display: flex;
+        */
+        .navbar {
+            display: none;
+        }
+        .btn-mobile {
+            display: block !important;
+            padding-right: 1rem;
+        }
+        .btn-mobile div{
+            visibility: visible;
+            width: 3rem;
+            height: 0.5rem;
+            margin: 0.5rem;
+            background: $main-color;
+        }
+        .menu-mobile {
+            display: flex !important;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5rem;
-            padding-top: 2rem;
-            list-style: none;
-        }
-        a {
-            font-size: 3rem;
-            letter-spacing: 1px;
-            font-family: $text-font;
-            font-weight: bolder;
-            color: $tertiary-color;
-            text-decoration: none;
-        }
-        .close-menu {
-            width: 5rem;
-            border-radius: 1rem;
-            background: $tertiary-color;
-            color: $main-color;
-            font-size: 2rem;
-            font-weight: bolder;
-            float: right;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            font-size: 1.4rem;
+            background-color: $main-color;
+            opacity: 0.95;
+            z-index: 2;
+            li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5rem;
+                padding-top: 2rem;
+                list-style: none;
+            }
+            a {
+                font-size: 3rem;
+                letter-spacing: 1px;
+                font-family: $text-font;
+                font-weight: bolder;
+                color: $tertiary-color;
+                text-decoration: none;
+            }
+            .close-menu {
+                width: 5rem;
+                border-radius: 1rem;
+                background: $tertiary-color;
+                color: $main-color;
+                font-size: 2rem;
+                font-weight: bolder;
+                float: right;
+            }
         }
     }
+    
     /*Slide*/
     .carousel-caption {
         h2 {

@@ -5,26 +5,54 @@ header {
   height: 20%;
   display: flex;
   justify-content: space-between;
+  /*  .midias {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        align-items: center;
+        margin-right: 3rem;
+        i {
+            font-size: 4rem;
+            padding: 0.5rem;
+            color: $tertiary-color;
+            background: $bg-color-primary;
+            border-radius: 1rem;
+        }
+    }
+    */
 }
 header img {
   width: 200px;
   height: 170px;
   border-radius: 100%;
-  margin-left: 5rem;
 }
-header .midias {
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+}
+header .navbar ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
-  align-items: center;
-  margin-right: 3rem;
+  gap: 5rem;
 }
-header .midias i {
-  font-size: 4rem;
-  padding: 0.5rem;
-  color: #faeeba;
-  background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
-  border-radius: 1rem;
+header .navbar ul li {
+  list-style: none;
+}
+header .navbar ul li a {
+  text-decoration: none;
+  background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Oleo Script Swash Caps";
+  font-size: 3rem;
+}
+header .navbar ul li a:hover {
+  background: #800317;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 header .menu-mobile, header .btn-mobile {
   visibility: hidden;
@@ -46,31 +74,6 @@ html {
 
 body {
   background-color: #faeeba;
-}
-
-.navbar {
-  width: 100%;
-  height: 5rem;
-  background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
-  display: flex;
-  justify-content: center;
-}
-.navbar ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5rem;
-}
-.navbar ul li {
-  list-style: none;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #faeeba;
-  font-family: "Oleo Script Swash Caps";
-  font-size: 2.5rem;
-}
-.navbar ul li a:hover {
-  text-shadow: 0 0 1px;
 }
 
 .carousel-caption h2 {
@@ -219,7 +222,10 @@ body {
 .about #sobre .about-description {
   height: 400px;
   padding: 3rem;
-  color: #220404;
+  letter-spacing: 0.5rem;
+  background: linear-gradient(0deg, rgb(141, 20, 40) 0%, rgb(34, 4, 4) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about #sobre .about-description h2 {
   font-size: 4rem;
@@ -518,36 +524,38 @@ body {
   header {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
+    /*
+    .midias {
+        margin: 0;
+        i {
+            font-size: 3rem;
+        }
+    }
+    */
   }
   header img {
     width: 180px;
     height: 150px;
     margin: 0;
   }
-  header .midias {
-    margin: 0;
-  }
-  header .midias i {
-    font-size: 3rem;
-  }
-  /*Nav Menu*/
-  .navbar {
+  header .navbar {
     display: none;
   }
-  .btn-mobile {
+  header .btn-mobile {
     display: block !important;
+    padding-right: 1rem;
   }
-  .btn-mobile div {
+  header .btn-mobile div {
     visibility: visible;
     width: 3rem;
     height: 0.5rem;
     margin: 0.5rem;
     background: #800317;
   }
-  .menu-mobile {
+  header .menu-mobile {
     display: flex !important;
     flex-direction: column;
     position: fixed;
@@ -560,7 +568,7 @@ body {
     opacity: 0.95;
     z-index: 2;
   }
-  .menu-mobile li {
+  header .menu-mobile li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -569,7 +577,7 @@ body {
     padding-top: 2rem;
     list-style: none;
   }
-  .menu-mobile a {
+  header .menu-mobile a {
     font-size: 3rem;
     letter-spacing: 1px;
     font-family: "Oleo Script Swash Caps";
@@ -577,7 +585,7 @@ body {
     color: #faeeba;
     text-decoration: none;
   }
-  .menu-mobile .close-menu {
+  header .menu-mobile .close-menu {
     width: 5rem;
     border-radius: 1rem;
     background: #faeeba;
