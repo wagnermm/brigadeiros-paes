@@ -1,6 +1,5 @@
 .about {
     font-family: $text-font;
-    padding: 3rem;
     color: $primary-color;
     #confeiteiro {
         display: flex;
@@ -21,7 +20,7 @@
         align-items: center;
         text-align: center;
         .about-description {
-            height: 400px;
+            height: auto;
             padding: 3rem;
             letter-spacing: 0.5rem;
             background: linear-gradient(0deg, rgb(141, 20, 40) 0%, rgba(34,4,4,1) 100%);

@@ -45,22 +45,9 @@
     .about {
         #confeiteiro {
             width: 100%;
+            padding: 1rem;
             img {
                 width: 150px !important;
-            }
-        }
-        #sobre {
-            width: 100%;
-            .about-description {
-                height: 300px;
-                padding: 1rem;
-                h2 {
-                    font-size: 2rem;
-                    margin-top: 0;
-                }
-                h5 {
-                    font-size: 1.4rem;
-                }
             }
         }
     }
@@ -186,15 +173,7 @@
         #sobre {
             width: 100%;
             .about-description {
-                height: 300px;
                 padding: 1rem;
-                h2 {
-                    font-size: 4rem;
-                    margin-top: 0;
-                }
-                h5 {
-                    font-size: 2rem;
-                }
             }
         }
     }

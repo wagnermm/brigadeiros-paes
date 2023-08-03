@@ -197,7 +197,6 @@ body {
 
 .about {
   font-family: "Oleo Script Swash Caps";
-  padding: 3rem;
   color: #220404;
 }
 .about #confeiteiro {
@@ -220,7 +219,7 @@ body {
   text-align: center;
 }
 .about #sobre .about-description {
-  height: 400px;
+  height: auto;
   padding: 3rem;
   letter-spacing: 0.5rem;
   background: linear-gradient(0deg, rgb(141, 20, 40) 0%, rgb(34, 4, 4) 100%);
@@ -500,23 +499,10 @@ body {
   /*About*/
   .about #confeiteiro {
     width: 100%;
+    padding: 1rem;
   }
   .about #confeiteiro img {
     width: 150px !important;
-  }
-  .about #sobre {
-    width: 100%;
-  }
-  .about #sobre .about-description {
-    height: 300px;
-    padding: 1rem;
-  }
-  .about #sobre .about-description h2 {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-  .about #sobre .about-description h5 {
-    font-size: 1.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -632,15 +618,7 @@ body {
     width: 100%;
   }
   .about #sobre .about-description {
-    height: 300px;
     padding: 1rem;
-  }
-  .about #sobre .about-description h2 {
-    font-size: 4rem;
-    margin-top: 0;
-  }
-  .about #sobre .about-description h5 {
-    font-size: 2rem;
   }
   /*Footer*/
   #contact {
