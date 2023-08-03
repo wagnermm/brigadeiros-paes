@@ -43,11 +43,12 @@
     }
     /*About*/
     .about {
-        #confeiteiro {
-            width: 100%;
-            padding: 1rem;
-            img {
-                width: 150px !important;
+        #sobre {
+            h1 {
+                font-size: 3rem !important;
+            }
+            h5 {
+                font-size: 1.8rem !important;
             }
         }
     }
@@ -167,7 +168,7 @@
         #confeiteiro {
             width: 100%;
             img {
-                width: 200px;
+                width: 300px;
             }
         }
         #sobre {

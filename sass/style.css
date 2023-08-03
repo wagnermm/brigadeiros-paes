@@ -205,6 +205,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: auto;
   padding: 5rem;
 }
 .about #confeiteiro img {
@@ -226,7 +227,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about #sobre .about-description h2 {
+.about #sobre .about-description h1 {
   font-size: 4rem;
   margin-top: 5rem;
 }
@@ -497,12 +498,11 @@ body {
     height: 300px;
   }
   /*About*/
-  .about #confeiteiro {
-    width: 100%;
-    padding: 1rem;
+  .about #sobre h1 {
+    font-size: 3rem !important;
   }
-  .about #confeiteiro img {
-    width: 150px !important;
+  .about #sobre h5 {
+    font-size: 1.8rem !important;
   }
 }
 @media (max-width: 768px) {
@@ -612,7 +612,7 @@ body {
     width: 100%;
   }
   .about #confeiteiro img {
-    width: 200px;
+    width: 300px;
   }
   .about #sobre {
     width: 100%;
