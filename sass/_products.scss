@@ -1,15 +1,10 @@
 #products {
-    position: fixed;
-    top: 0;
-    overflow-y: scroll;
     width: 100%;
     height: 100%;
     text-align: center;
     padding: 5rem;
     background-color: $tertiary-color;
     font-family: $text-font;
-    z-index: 2;
-    visibility: hidden;
     #carousel-title {
         color: $main-color;
         .line-up {
