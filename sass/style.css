@@ -1,29 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
 header {
-  background-color: #faeeba;
+  background-color: #0c0202;
   width: 100%;
-  height: 20%;
+  height: 150px;
   display: flex;
   justify-content: space-around;
-  /*  .midias {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        align-items: center;
-        margin-right: 3rem;
-        i {
-            font-size: 4rem;
-            padding: 0.5rem;
-            color: $tertiary-color;
-            background: $bg-color-primary;
-            border-radius: 1rem;
-        }
-    }
-    */
+  z-index: 3;
 }
 header img {
-  width: 200px;
-  height: 170px;
+  width: 150px;
+  height: auto;
   border-radius: 100%;
 }
 header .navbar {
@@ -42,14 +28,14 @@ header .navbar ul li {
 }
 header .navbar ul li a {
   text-decoration: none;
-  background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
+  background: linear-gradient(0deg, rgb(245, 189, 198) 0%, rgb(207, 112, 112) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Oleo Script Swash Caps";
   font-size: 3.5rem;
 }
 header .navbar ul li a:hover {
-  background: #800317;
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -94,8 +80,10 @@ body {
   font-size: 5rem;
 }
 .featured .cards-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 2rem;
   margin-bottom: 5rem;
 }

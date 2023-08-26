@@ -1,29 +1,15 @@
 header {
-    background-color: $tertiary-color;
+    background-color: $bg-color-secondary;
     width: 100%;
-    height: 20%;
+    height: 150px;
     display: flex;
     justify-content: space-around;
+    z-index: 3;
     img {
-        width: 200px;
-        height: 170px;
+        width: 150px;
+        height: auto;
         border-radius: 100%;
     }
-  /*  .midias {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        align-items: center;
-        margin-right: 3rem;
-        i {
-            font-size: 4rem;
-            padding: 0.5rem;
-            color: $tertiary-color;
-            background: $bg-color-primary;
-            border-radius: 1rem;
-        }
-    }
-    */
     .navbar {
         display: flex;
         justify-content: center;
@@ -37,13 +23,13 @@ header {
                 list-style: none;
                 a {
                     text-decoration: none;
-                    background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgba(34,4,4,1) 100%);
+                    background: linear-gradient(0deg, rgb(245, 189, 198) 0%, rgb(207, 112, 112) 100%);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     font-family: $text-font;
                     font-size: 3.5rem;
                     &:hover {
-                        background: $main-color;
+                        background: #fff;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
                     }
