@@ -79,6 +79,7 @@
             display: none;
         }
         .btn-mobile {
+            margin-top: 5rem;
             display: block !important;
             padding-right: 1rem;
         }
@@ -111,7 +112,7 @@
                 list-style: none;
             }
             a {
-                font-size: 3rem;
+                font-size: 5rem;
                 letter-spacing: 1px;
                 font-family: $text-font;
                 font-weight: bolder;
@@ -213,6 +214,7 @@
             margin-top: 5rem;
             margin-bottom: 2rem;
             img {
+                width: 200px;
                 height: 100px;
             }
             h4 {

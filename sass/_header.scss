@@ -1,14 +1,15 @@
 header {
-    background-color: $bg-color-secondary;
+    background-image: url(../images/header-background.jpg);
     width: 100%;
     height: 150px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 3;
     img {
         width: 150px;
         height: auto;
         border-radius: 100%;
+        margin-left: 2rem;
     }
     .navbar {
         display: flex;
@@ -18,20 +19,20 @@ header {
         ul {
             display: flex;
             flex-wrap: wrap;
-            gap: 5rem;
+            gap: 3rem;
+            margin-right: 2rem;
             li {
+                margin-top: 8rem;
                 list-style: none;
                 a {
                     text-decoration: none;
-                    background: linear-gradient(0deg, rgb(245, 189, 198) 0%, rgb(207, 112, 112) 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: $main-color;
                     font-family: $text-font;
                     font-size: 3.5rem;
                     &:hover {
-                        background: #fff;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        color: $main-color;
+                        text-shadow: 0.5px 0.5px;
+                        border-bottom: 1px solid $main-color;
                     }
                 }
             }

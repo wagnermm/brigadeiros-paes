@@ -21,6 +21,10 @@
             img {
                 width: 100%;
                 height: 250px;
+                &:hover {
+                    opacity: 90%;
+                    border: 2px solid #fff;
+                }
             }
             .produto {
                 height: auto;

@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,200&family=Lato:wght@300&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
 header {
-  background-color: #0c0202;
+  background-image: url(../images/header-background.jpg);
   width: 100%;
   height: 150px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   z-index: 3;
 }
 header img {
   width: 150px;
   height: auto;
   border-radius: 100%;
+  margin-left: 2rem;
 }
 header .navbar {
   display: flex;
@@ -21,23 +22,23 @@ header .navbar {
 header .navbar ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3rem;
+  margin-right: 2rem;
 }
 header .navbar ul li {
+  margin-top: 8rem;
   list-style: none;
 }
 header .navbar ul li a {
   text-decoration: none;
-  background: linear-gradient(0deg, rgb(245, 189, 198) 0%, rgb(207, 112, 112) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #800317;
   font-family: "Oleo Script Swash Caps";
   font-size: 3.5rem;
 }
 header .navbar ul li a:hover {
-  background: #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #800317;
+  text-shadow: 0.5px 0.5px;
+  border-bottom: 1px solid #800317;
 }
 header .menu-mobile, header .btn-mobile {
   visibility: hidden;
@@ -58,7 +59,7 @@ html {
 }
 
 body {
-  background-color: #faeeba;
+  background-color: #fff;
 }
 
 .carousel-caption h2 {
@@ -94,6 +95,10 @@ body {
 .featured .cards-container .cards img {
   width: 100%;
   height: 250px;
+}
+.featured .cards-container .cards img:hover {
+  opacity: 90%;
+  border: 2px solid #fff;
 }
 .featured .cards-container .cards .produto {
   height: auto;
@@ -166,7 +171,7 @@ body {
 .curiosidades #background-description {
   background: rgba(34, 4, 4, 0.8);
   width: 100vw;
-  height: 320px;
+  height: auto;
 }
 .curiosidades #background-description #curiosidades-text {
   padding: 5rem;
@@ -197,7 +202,11 @@ body {
 }
 .about #confeiteiro img {
   width: 400px;
-  box-shadow: 1px 1px 1px #220404;
+  box-shadow: 1px 1px 1px #0c0202;
+}
+.about #confeiteiro img:hover {
+  opacity: 95%;
+  box-shadow: none;
 }
 .about #sobre {
   display: flex;
@@ -205,14 +214,16 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  height: auto;
+  padding: 5rem;
 }
 .about #sobre .about-description {
   height: auto;
-  padding: 3rem;
   letter-spacing: 0.5rem;
   background: linear-gradient(0deg, rgb(141, 20, 40) 0%, rgb(34, 4, 4) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  box-shadow: 1px 1px #800317;
 }
 .about #sobre .about-description h1 {
   font-size: 4rem;
@@ -295,7 +306,7 @@ body {
   height: 100%;
   text-align: center;
   padding: 5rem;
-  background-color: #faeeba;
+  background-color: #800317;
   font-family: "Oleo Script Swash Caps";
 }
 #products #carousel-title {
@@ -320,32 +331,34 @@ body {
   background: #610211;
 }
 #products #carousel-title h1 {
-  font-size: 6rem;
-  background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
+  font-size: 8rem;
+  background: linear-gradient(0deg, rgb(255, 163, 178) 0%, rgb(238, 209, 209) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 #products #carousel {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 #products #carousel img {
-  width: auto;
+  width: 350px;
   height: 250px;
   margin-bottom: 1rem;
 }
 #products #carousel h4 {
   margin-top: 2rem;
   font-size: 2.5rem;
-  color: #220404;
+  color: #0c0202;
 }
 #products #carousel p {
   font-size: 1.6rem;
-  color: #039dc4;
+  color: #faeeba;
+  text-shadow: 1px 1px #0c0202;
 }
 #products .owl-prev, #products .owl-next {
   font-size: 8rem;
-  color: #800317;
+  color: #faeeba;
+  text-shadow: 1px 1px 2px #0c0202;
 }
 #products .pedir-agora {
   display: flex;
@@ -353,7 +366,8 @@ body {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  color: #220404;
+  color: #faeeba;
+  text-shadow: 1px 1px #0c0202;
 }
 #products .pedir-agora h1 {
   font-size: 3rem;
@@ -370,18 +384,26 @@ body {
   margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
+#products .pedir-agora .pedir-contato i:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px #faeeba;
+}
 #products .pedir-agora .pedir-contato a {
   text-decoration: none;
-  color: #039dc4;
+  color: #faeeba;
+}
+#products .pedir-agora .pedir-contato a:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #faeeba;
 }
 #products .pedir-agora .pedir-contato p {
   font-size: 1.6rem;
   letter-spacing: 1px;
 }
 #products #contact-product {
-  background-color: #faeeba;
   width: 100%;
   padding: 4rem;
+  background-color: #0c0202;
 }
 #products #contact-product .line-footer {
   width: 100%;
@@ -390,16 +412,15 @@ body {
 }
 #products #contact-product .line-footer .line-center {
   width: 100%;
-  border-bottom: 1px solid #220404;
+  border-bottom: 1px solid #faeeba;
 }
 #products #contact-product .menus {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 2rem;
   margin-top: 2rem;
-  color: #800317;
+  color: #faeeba;
 }
 #products #contact-product .menus .endereco, #products #contact-product .menus .atendimento,
 #products #contact-product .menus .pedido, #products #contact-product .menus .entregas {
@@ -408,11 +429,11 @@ body {
 }
 #products #contact-product .menus .endereco h2, #products #contact-product .menus .atendimento h2,
 #products #contact-product .menus .pedido h2, #products #contact-product .menus .entregas h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 #products #contact-product .menus .endereco p, #products #contact-product .menus .atendimento p,
 #products #contact-product .menus .pedido p, #products #contact-product .menus .entregas p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
 }
 #products #contact-product .midias-footer {
@@ -428,8 +449,8 @@ body {
 #products #contact-product .midias-footer i {
   font-size: 2rem;
   padding: 0.5rem;
-  color: #faeeba;
-  background: #800317;
+  color: #220404;
+  background: #faeeba;
   border-radius: 1rem;
 }
 #products #contact-product .top {
@@ -439,7 +460,7 @@ body {
 }
 #products #contact-product .top a {
   text-decoration: none;
-  color: #800317;
+  color: #faeeba;
   font-family: "Oleo Script Swash Caps";
 }
 #products #contact-product .top a:hover {
@@ -517,6 +538,7 @@ body {
     display: none;
   }
   header .btn-mobile {
+    margin-top: 5rem;
     display: block !important;
     padding-right: 1rem;
   }
@@ -550,7 +572,7 @@ body {
     list-style: none;
   }
   header .menu-mobile a {
-    font-size: 3rem;
+    font-size: 5rem;
     letter-spacing: 1px;
     font-family: "Oleo Script Swash Caps";
     font-weight: bolder;
@@ -639,6 +661,7 @@ body {
     margin-bottom: 2rem;
   }
   #products #carousel img {
+    width: 200px;
     height: 100px;
   }
   #products #carousel h4 {

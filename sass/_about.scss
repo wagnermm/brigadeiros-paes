@@ -11,7 +11,11 @@
         padding: 5rem;
         img {
             width: 400px;
-            box-shadow: 1px 1px 1px $primary-color;
+            box-shadow: 1px 1px 1px $bg-color-secondary;
+            &:hover {
+                opacity: 95%;
+                box-shadow: none;
+            }
         }
     }
     #sobre {
@@ -20,13 +24,15 @@
         justify-content: center;
         align-items: center;
         text-align: center;
+        height: auto;
+        padding: 5rem;
         .about-description {
             height: auto;
-            padding: 3rem;
             letter-spacing: 0.5rem;
             background: linear-gradient(0deg, rgb(141, 20, 40) 0%, rgba(34,4,4,1) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            box-shadow: 1px 1px $main-color;
             h1 {
                 font-size: 4rem;
                 margin-top: 5rem;
