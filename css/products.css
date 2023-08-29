@@ -63,26 +63,16 @@ header .menu-mobile, header .btn-mobile {
     background-color: #800317;
     font-family: "Oleo Script Swash Caps";
 }
+.line-up {
+  margin-top: 5rem;
+  width: 100%;
+  text-align: center;
+}
+.line-up h1 {
+  text-align: center;
+}
 #products #carousel-title {
     color: #800317;
-}
-#products #carousel-title .line-up {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#products #carousel-title .line-up .close {
-    background: linear-gradient(0deg, rgb(250, 62, 93) 0%, rgb(34, 4, 4) 100%);
-    color: #faeeba;
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 40px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#products #carousel-title .line-up .close:hover {
-    background: #610211;
 }
 #products #carousel-title h1 {
     font-size: 8rem;
@@ -268,7 +258,7 @@ header .menu-mobile, header .btn-mobile {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-top: 5rem;
+      margin-top: 8rem;
       padding-top: 2rem;
       list-style: none;
     }
@@ -285,7 +275,7 @@ header .menu-mobile, header .btn-mobile {
       border-radius: 1rem;
       background: #faeeba;
       color: #800317;
-      font-size: 2rem;
+      font-size: 3rem;
       font-weight: bolder;
       float: right;
     }
@@ -299,7 +289,7 @@ header .menu-mobile, header .btn-mobile {
     }
     #products #carousel-title h1 {
       margin-top: 2rem;
-      font-size: 4rem;
+      font-size: 5rem;
     }
     #products #carousel {
       margin-top: 3rem;
