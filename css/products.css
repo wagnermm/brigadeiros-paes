@@ -291,20 +291,22 @@ header .menu-mobile, header .btn-mobile {
     }
     /*Products*/
     #products {
-      padding: 2rem;
+      padding: 0;
     }
     #products #carousel-title .line-up .close {
       width: 30px;
       font-size: 1rem;
     }
     #products #carousel-title h1 {
+      margin-top: 2rem;
       font-size: 4rem;
     }
     #products #carousel {
-      margin-top: 1rem;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
     }
     #products #carousel img {
-      width: 200px;
+      width: 150px;
       height: 100px;
     }
     #products #carousel h4 {
@@ -314,10 +316,11 @@ header .menu-mobile, header .btn-mobile {
       font-size: 1.4rem;
     }
     #products .owl-prev, #products .owl-next {
-      font-size: 5rem;
-      color: #faeeba;
+      display: none;
     }
     #products .pedir-agora {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
