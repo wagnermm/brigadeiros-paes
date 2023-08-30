@@ -44,6 +44,34 @@ header .menu-mobile, header .btn-mobile {
   visibility: hidden;
   display: none;
 }
+header .cart {
+  margin-top: 10rem;
+  margin-right: 1rem;
+}
+header .cart #cart-btn {
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  padding: 5px;
+  display: flex;
+  color: #800317;
+  font-weight: bolder;
+}
+header .cart #cart-btn .cart-status {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 3vh;
+  left: -2px;
+  color: #f00;
+  font-size: 2rem;
+  font-weight: bolder;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 * {
   padding: 0;
@@ -111,7 +139,10 @@ body {
 }
 .featured .cards-container .cards .produto .btn {
   margin-top: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem;
   background: linear-gradient(0deg, #800317 0%, rgb(34, 4, 4) 100%);
+  font-size: 1.2rem;
   color: #fff;
 }
 .featured .btn-container {
@@ -178,6 +209,7 @@ body {
 }
 .curiosidades #background-description #curiosidades-text h1, .curiosidades #background-description #curiosidades-text h5 {
   font-family: "Oleo Script Swash Caps";
+  color: #faeeba;
 }
 .curiosidades #background-description #curiosidades-text h1 {
   font-size: 5rem;
@@ -189,6 +221,7 @@ body {
 
 .about {
   font-family: "Oleo Script Swash Caps";
+  background-color: #faeeba;
   color: #220404;
 }
 .about #confeiteiro {
@@ -567,7 +600,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding-top: 2rem;
     list-style: none;
   }
@@ -580,11 +613,11 @@ body {
     text-decoration: none;
   }
   header .menu-mobile .close-menu {
-    width: 5rem;
+    width: 6rem;
     border-radius: 1rem;
     background: #faeeba;
     color: #800317;
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: bolder;
     float: right;
   }
