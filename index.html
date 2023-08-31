@@ -10,7 +10,7 @@
     <title>Brigadeiros D Paes</title>
 </head>
 <body>
-    <header>
+    <header id="carrinho">
         <div class="logo">
             <img src="./images/logo.jpg" alt="logo">
         </div>
@@ -36,34 +36,25 @@
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
-        <div class="cart" id="carrinho">
+        <div class="cart">
             <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-status">0</span></button>
-            <div class="cart-list">
-                <h1>Seus Produtos</h1>
+            <div class="cart-list" id="cart-list">
+                <div class="list-title">
+                    <div id="close-cartList">X</div>
+                    <h1>Seus Produtos</h1>
+                </div>
                 <div class="cart-listProducts">
                     <div class="cart-product">
-                        <div class="descricao-produto">
-                            Descrição do Produto:
-                        </div>
-                        <div id="produtoNome">
-                            Brigadeiro de Paçoca
-                        </div>
+                        <span class="descricao-produto">Descrição:</span>
+                        <span id="produtoNome"></span>
                     </div>
                     <div class="cart-qntd">
-                        <div class="qntd-produto">
-                            Quantidade de Centos:
-                        </div>
-                        <div id="produtoQntd">
-                            <input type="number" id="products-number" value="0" placeholder="0">
-                        </div>
+                        <span class="qntd-produto">Quantidade de Centos:</span>
+                        <span id="produtoQntd"><input type="number" id="products-number" value="0" placeholder="0"></span>
                     </div>
                     <div class="cart-price">
-                        <div class="valor-produto">
-                            Valor:
-                        </div>
-                        <div id="produtoValor">
-                            90
-                        </div>
+                        <span class="valor-produto">Valor Total:</span>
+                        <span id="produtoValor"></span>
                     </div>
                 </div>
                 <button id="finaliza-compra">Finalizar Compra</button>

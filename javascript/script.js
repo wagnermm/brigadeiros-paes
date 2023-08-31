@@ -11,7 +11,22 @@ var closeMobile = document.querySelector('.close-menu, .menu-mobile').addEventLi
     document.querySelector('.menu-mobile').style.visibility="hidden"
 });
 
+// Shopping Cart
+var listCartIsVisible = document.querySelector('#cart-btn').addEventListener('mouseenter', function() {
+    document.querySelector('#cart-list').style.visibility='visible'
+})
+var listCartIsNotVisible = document.querySelector('#close-cartList').addEventListener('click', function() {
+    document.querySelector('#cart-list').style.visibility='hidden'
+})
+
 // Btn Adicionar Carrinnho
+/*const adicionaItem = document.getElementsByClassName('adiciona-produto')
+for(var i = 0; i < adicionaItem.length; i++) {
+    adicionaItem[i].addEventListener('click', function(event) {
+        event.target
+    })
+}*/
+
 const adicionaItem = document.getElementsByClassName('adiciona-produto')
 for(var i = 0; i < adicionaItem.length; i++) {
     adicionaItem[i].addEventListener('click', function(event) {

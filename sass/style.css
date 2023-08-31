@@ -46,6 +46,7 @@ header .menu-mobile, header .btn-mobile {
 }
 header .cart {
   position: relative;
+  z-index: 3;
 }
 header .cart #cart-btn {
   position: relative;
@@ -73,8 +74,8 @@ header .cart #cart-btn .cart-status {
 }
 header .cart .cart-list {
   position: absolute;
-  top: 5vh;
-  right: 3vw;
+  top: 6vh;
+  right: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -83,9 +84,31 @@ header .cart .cart-list {
   height: auto;
   padding: 1rem;
   background-color: #fff;
-  z-index: 4;
+  z-index: 2;
+  visibility: hidden;
 }
-header .cart .cart-list h1 {
+header .cart .cart-list .list-title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .cart .cart-list .list-title #close-cartList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #800317;
+  color: #faeeba;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+header .cart .cart-list .list-title h1 {
   font-size: 2rem;
   color: #800317;
   margin-bottom: 2rem;
@@ -125,6 +148,9 @@ header .cart .cart-list .cart-listProducts .cart-qntd #produtoQntd #products-num
   font-size: 1.4rem;
   font-weight: bolder;
 }
+header .cart .cart-list .cart-listProducts .cart-qntd #produtoQntd #products-number input {
+  outline: none;
+}
 header .cart .cart-list .cart-listProducts .cart-price .valor-produto {
   width: 200px;
   font-size: 1.4rem;
@@ -142,6 +168,9 @@ header .cart .cart-list #finaliza-compra {
   padding: 0.5rem;
   border: none;
   border-radius: 2rem;
+}
+header .cart .cart-list #finaliza-compra:hover {
+  background-color: #f00;
 }
 
 * {
@@ -664,7 +693,7 @@ body {
     font-size: 1.4rem;
     background-color: #800317;
     opacity: 0.95;
-    z-index: 2;
+    z-index: 4;
   }
   header .menu-mobile li {
     display: flex;
