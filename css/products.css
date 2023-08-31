@@ -56,7 +56,6 @@ header .menu-mobile, header .btn-mobile {
 }
 header .cart {
   margin-top: 10rem;
-  margin-right: 2rem;
 }
 header .cart #cart-btn {
   position: relative;

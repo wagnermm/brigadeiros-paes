@@ -36,8 +36,38 @@
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
-        <div class="cart">
+        <div class="cart" id="carrinho">
             <button id="cart-btn"><i class="fa-solid fa-cart-shopping"></i><span class="cart-status">0</span></button>
+            <div class="cart-list">
+                <h1>Seus Produtos</h1>
+                <div class="cart-listProducts">
+                    <div class="cart-product">
+                        <div class="descricao-produto">
+                            Descrição do Produto:
+                        </div>
+                        <div id="produtoNome">
+                            Brigadeiro de Paçoca
+                        </div>
+                    </div>
+                    <div class="cart-qntd">
+                        <div class="qntd-produto">
+                            Quantidade de Centos:
+                        </div>
+                        <div id="produtoQntd">
+                            <input type="number" id="products-number" value="0" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="cart-price">
+                        <div class="valor-produto">
+                            Valor:
+                        </div>
+                        <div id="produtoValor">
+                            90
+                        </div>
+                    </div>
+                </div>
+                <button id="finaliza-compra">Finalizar Compra</button>
+            </div>
         </div>
     </header>
     <section class="banner">
@@ -94,48 +124,54 @@
                             <img src="./images/brigadeiro.jpg" alt="brigadeiro">
                             <div class="produto">
                                 <h5>Brigadeiro Belga</h5>
+                                <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-1">Ver detalhes</a>
-                                <a class="btn" id="adiciona-produto">Adicionar ao Carrinho</a>
+                                <a class="btn adiciona-produto" href="#carrinho">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                         <div class="cards">
                             <img src="./images/pacoca.jpg" alt="brigadeiro-paçoca">
                             <div class="produto">
                                 <h5>Brigadeiro de Paçoca</h5>
+                                <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-2">Ver detalhes</a>
-                                <a class="btn" id="adiciona-produto">Adicionar ao Carrinho</a>
+                                <a class="btn adiciona-produto" href="#carrinho">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                         <div class="cards">
                             <img src="./images/copinhos.jpg" alt="copinhos">
                             <div class="produto">
                                 <h5>Copinhos de Chocolate</h5>
+                                <h6>R$ 5,00 a unidade</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-3">Ver detalhes</a>
-                                <a class="btn" id="adiciona-produto">Adicionar ao Carrinho</a>
+                                <a class="btn adiciona-produto" href="#carrinho">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                         <div class="cards">
                             <img src="./images/bolacha.jpg" alt="bolacha">
                             <div class="produto">
                                 <h5>Brigadeiro de Oreo</h5>
+                                <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-4">Ver detalhes</a>
-                                <a class="btn" id="adiciona-produto">Adicionar ao Carrinho</a>
+                                <a class="btn adiciona-produto" href="#carrinho">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                         <div class="cards">
                             <img src="./images/maracuja.jpg" alt="brigadeiro-maracuja">
                             <div class="produto">
                                 <h5>Brigadeiro de Maracujá</h5>
+                                <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-5">Ver detalhes</a>
-                                <a class="btn" id="adiciona-produto">Adicionar ao Carrinho</a>
+                                <a class="btn adiciona-produto" href="#carrinho">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                         <div class="cards">
                             <img src="./images/frutas.jpg" alt="brigadeiros-frutas">
                             <div class="produto">
                                 <h5>Brigadeiros Gourmet</h5>
+                                <h6>R$ 100,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-6">Ver detalhes</a>
-                                <a class="btn" id="adiciona-produto">Adicionar ao Carrinho</a>
+                                <a class="btn adiciona-produto" href="#carrinho">Adicionar ao Carrinho</a>
                             </div>
                         </div>
                     </div>
@@ -155,8 +191,6 @@
                         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h6>Preço</h6>
-                        <h5>R$ 90,00 o cento</h5><br>
                         <h6>Descrição</h6>
                         <p>Uma versão aprimorada do brigadeiro. Preparado com chocolate belga de alta qualidade, leite condensado e manteiga, resultando em uma textura cremosa e um sabor intenso de chocolate.</p>
                     </div>
@@ -174,8 +208,6 @@
                         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h6>Preço</h6>
-                        <h5>R$ 90,00 o cento</h5><br>
                         <h6>Descrição</h6>
                         <p>Paçoca e brigadeiro estão entre os doces favoritos dos brasileiros, juntos formam uma perfeita combinação de sabor ficando ainda melhor quando reunidos em um único brigadeiro.</p>
                     </div>
@@ -193,8 +225,6 @@
                         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h6>Preço</h6>
-                        <h5>R$ 5,00 a unidade</h5><br>
                         <h6>Descrição</h6>
                         <p>O copinho de chocolate é um doce delicioso que tem feito sucesso nas festas. Ele pode ser recheado com diversos sabores diferentes: brigadeiro, beijinho, chantilly, mousse de maracujá, doce de leite, creme de nozes.</p>
                     </div>
@@ -212,8 +242,6 @@
                         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h6>Preço</h6>
-                        <h5>R$ 90,00 o cento</h5><br>
                         <h6>Descrição</h6>
                         <p>O sabor de um delicioso biscoito oreo em um brigadeiro, vamos nos surpreender a cada mordida que nos trará as sensações agradáveis de comemorações, lembrando o doce típico da culinária brasileira.</p>
                     </div>
@@ -231,8 +259,6 @@
                         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h6>Preço</h6>
-                        <h5>R$ 90,00 o cento</h5><br>
                         <h6>Descrição</h6>
                         <p>Uma versão diferente do brigadeiro tradicional, porém não menos delicioso, temos o brigadeiro de maracujá. O passo a passo é simples e com apenas de 3 ingredientes: suco de maracujá, leite condensado e a manteiga.</p>
                     </div>
@@ -250,8 +276,6 @@
                         <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h6>Preço</h6>
-                        <h5>R$ 100,00 o cento</h5><br>
                         <h6>Descrição</h6>
                         <p>Brigadeiros especiais preparados com uma variedades de frutas a gosto do nosso cliente. Com uma excelente combinação de cores das frutas, nosso brigadeiro gourmet torna-se ideal para decorações de mesas.</p>
                     </div>
@@ -314,21 +338,12 @@
                         <p>Ou se preferir, você pode retirar no local.</p>
                     </div>
                 </div>
-                <!--
-                    <div class="midias-footer">
-                    <div class="facebook">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    </div>
-                    <div class="instagram">
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                -->
-                </div>
             </div>
         </div>
-    </footer>
-    <script src="https://kit.fontawesome.com/cc8f61138a.js" crossorigin="anonymous"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.js"></script>
-    <script src="./javascript/script.js"></script>
+    </div>
+</footer>
+<script src="https://kit.fontawesome.com/cc8f61138a.js" crossorigin="anonymous"></script>
+<script src="./vendor/bootstrap/js/bootstrap.js"></script>
+<script src="./javascript/script.js"></script>
 </body>
 </html>

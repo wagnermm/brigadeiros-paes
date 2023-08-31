@@ -30,9 +30,12 @@
                 height: auto;
                 padding: 2rem;
                 color: $main-color;
-                h5 {
+                h5, h6 {
                     font-size: 2rem;
                     font-family: $text-font;
+                }
+                h6 {
+                    color: $secondary-color;
                 }
                 .btn {
                     margin-top: 2rem;

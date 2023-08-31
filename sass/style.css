@@ -5,6 +5,7 @@ header {
   height: 150px;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   z-index: 3;
 }
 header img {
@@ -26,7 +27,6 @@ header .navbar ul {
   margin-right: 2rem;
 }
 header .navbar ul li {
-  margin-top: 8rem;
   list-style: none;
 }
 header .navbar ul li a {
@@ -45,8 +45,7 @@ header .menu-mobile, header .btn-mobile {
   display: none;
 }
 header .cart {
-  margin-top: 10rem;
-  margin-right: 1rem;
+  position: relative;
 }
 header .cart #cart-btn {
   position: relative;
@@ -71,6 +70,78 @@ header .cart #cart-btn .cart-status {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+header .cart .cart-list {
+  position: absolute;
+  top: 5vh;
+  right: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  background-color: #fff;
+  z-index: 4;
+}
+header .cart .cart-list h1 {
+  font-size: 2rem;
+  color: #800317;
+  margin-bottom: 2rem;
+}
+header .cart .cart-list .cart-listProducts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+header .cart .cart-list .cart-listProducts .cart-product, header .cart .cart-list .cart-listProducts .cart-qntd, header .cart .cart-list .cart-listProducts .cart-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #800317;
+  border-bottom: 1px solid #800317;
+  margin-bottom: 1rem;
+}
+header .cart .cart-list .cart-listProducts .cart-product .descricao-produto {
+  width: 200px;
+  font-size: 1.4rem;
+}
+header .cart .cart-list .cart-listProducts .cart-product #produtoNome {
+  width: auto;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+header .cart .cart-list .cart-listProducts .cart-qntd .qntd-produto {
+  width: 200px;
+  font-size: 1.4rem;
+}
+header .cart .cart-list .cart-listProducts .cart-qntd #produtoQntd {
+  width: auto;
+}
+header .cart .cart-list .cart-listProducts .cart-qntd #produtoQntd #products-number {
+  width: 3rem;
+  color: #800317;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+header .cart .cart-list .cart-listProducts .cart-price .valor-produto {
+  width: 200px;
+  font-size: 1.4rem;
+}
+header .cart .cart-list .cart-listProducts .cart-price #produtoValor {
+  width: auto;
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+header .cart .cart-list #finaliza-compra {
+  margin-top: 1rem;
+  background-color: #800317;
+  color: #faeeba;
+  font-size: 1.4rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 2rem;
 }
 
 * {
@@ -133,9 +204,12 @@ body {
   padding: 2rem;
   color: #800317;
 }
-.featured .cards-container .cards .produto h5 {
+.featured .cards-container .cards .produto h5, .featured .cards-container .cards .produto h6 {
   font-size: 2rem;
   font-family: "Oleo Script Swash Caps";
+}
+.featured .cards-container .cards .produto h6 {
+  color: #039dc4;
 }
 .featured .cards-container .cards .produto .btn {
   margin-top: 2rem;
@@ -505,7 +579,6 @@ body {
     /*Header*/
     display: flex;
     flex-direction: row;
-    align-items: center;
     text-align: center;
   }
   header img {
@@ -551,7 +624,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
     /*
     .midias {
@@ -571,7 +643,6 @@ body {
     display: none;
   }
   header .btn-mobile {
-    margin-top: 5rem;
     display: block !important;
     padding-right: 1rem;
   }
