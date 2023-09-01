@@ -12,24 +12,21 @@ var closeMobile = document.querySelector('.close-menu, .menu-mobile').addEventLi
 });
 
 // Shopping Cart
-var listCartIsVisible = document.querySelector('#cart-btn').addEventListener('mouseenter', function() {
+var listCartIsVisible = document.querySelector('#cart-btn').addEventListener('click', ()=> {
     document.querySelector('#cart-list').style.visibility='visible'
 })
-var listCartIsNotVisible = document.querySelector('#close-cartList').addEventListener('click', function() {
+var listCartIsNotVisible = document.querySelector('#close-cartList').addEventListener('click', ()=> {
     document.querySelector('#cart-list').style.visibility='hidden'
 })
 
-// Btn Adicionar Carrinnho
-/*const adicionaItem = document.getElementsByClassName('adiciona-produto')
-for(var i = 0; i < adicionaItem.length; i++) {
-    adicionaItem[i].addEventListener('click', function(event) {
-        event.target
-    })
-}*/
-
-const adicionaItem = document.getElementsByClassName('adiciona-produto')
-for(var i = 0; i < adicionaItem.length; i++) {
-    adicionaItem[i].addEventListener('click', function(event) {
-        event.target
+// Adicionar Carrinnho
+let cartStatus = document.querySelector('#cart-status')
+let productName = document.querySelector('#produtoNome')
+let productQntd = document.querySelector('#products-number')
+let productValor = document.querySelector('#produtoValor')
+let btnAdicionaItem = document.querySelectorAll('#adiciona-produto')
+for(var i = 0; i < btnAdicionaItem.length; i++) {
+    btnAdicionaItem[i].addEventListener('click', ()=> {
+        cartStatus.innerHTML = 1
     })
 }
