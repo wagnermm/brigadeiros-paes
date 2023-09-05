@@ -25,8 +25,54 @@ let productName = document.querySelector('#produtoNome')
 let productQntd = document.querySelector('#products-number')
 let productValor = document.querySelector('#produtoValor')
 let btnAdicionaItem = document.querySelectorAll('#adiciona-produto')
+
+
+/* Lista Objetos */
+let allProducts = [
+    {
+        id: 0,
+        name: 'Brigadeiro Belga',
+        qntd: 0,
+        price: [90.00]
+    },
+    {
+        id: 1,
+        name: 'Brigadeiro de Paçoca',
+        qntd: 0,
+        price: [90.00]
+    },
+    {
+        id: 2,
+        name: 'Copinhos de Chocolate',
+        qntd: 0,
+        price: [100.00]
+    },
+    {
+        id: 3,
+        name: 'Brigadeiro de Óreo',
+        qntd: 0,
+        price: [90.00]
+    },
+    {
+        id: 4,
+        name: 'Brigadeiro de Maracujá',
+        qntd: 0,
+        price: [90.00]
+    },
+    {
+        id: 5,
+        name: 'Brigadeiros Gourmet',
+        qntd: 0,
+        price: [100.00]
+    }
+]
+
+/* Incrementa Valor no Ícone */
+let num = 0
 for(var i = 0; i < btnAdicionaItem.length; i++) {
     btnAdicionaItem[i].addEventListener('click', ()=> {
-        cartStatus.innerHTML = 1
+        num++
+        num = (num < 6) ? '0' + num : num
+        cartStatus.innerHTML = num
     })
 }
