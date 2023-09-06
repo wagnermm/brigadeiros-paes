@@ -27,7 +27,7 @@ let productValor = document.querySelector('#produtoValor')
 let btnAdicionaItem = document.querySelectorAll('#adiciona-produto')
 
 
-/* Lista Objetos */
+// Lista Objetos
 let allProducts = [
     {
         id: 0,
@@ -67,7 +67,7 @@ let allProducts = [
     }
 ]
 
-/* Incrementa Valor no Ícone */
+// Incrementa Valor no Ícone
 let num = 0
 for(var i = 0; i < btnAdicionaItem.length; i++) {
     btnAdicionaItem[i].addEventListener('click', ()=> {
