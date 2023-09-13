@@ -151,10 +151,6 @@ header .cart .cart-list .cart-listProducts .cart-qntd .qntd-produto {
 }
 header .cart .cart-list .cart-listProducts .cart-qntd #produtoQntd {
   width: auto;
-}
-header .cart .cart-list .cart-listProducts .cart-qntd #produtoQntd #products-number {
-  width: 3rem;
-  color: #800317;
   font-size: 1.6rem;
   font-weight: bolder;
 }
@@ -167,7 +163,14 @@ header .cart .cart-list .cart-listProducts .cart-price #produtoValor {
   font-size: 1.6rem;
   font-weight: bolder;
 }
-header .cart .cart-list #finaliza-compra {
+header .cart .cart-list .buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .cart .cart-list .buttons #finaliza-compra, header .cart .cart-list .buttons #remove-product {
   margin-top: 1rem;
   background-color: #800317;
   color: #faeeba;
@@ -176,7 +179,7 @@ header .cart .cart-list #finaliza-compra {
   border: none;
   border-radius: 2rem;
 }
-header .cart .cart-list #finaliza-compra:hover {
+header .cart .cart-list .buttons #finaliza-compra:hover, header .cart .cart-list .buttons #remove-product:hover {
   background-color: #f00;
 }
 

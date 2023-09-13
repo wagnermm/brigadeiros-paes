@@ -43,21 +43,24 @@
                     <div id="close-cartList">X</div>
                     <h1>Seus Produtos</h1>
                 </div>
-                <div class="cart-listProducts">
+                <div class="cart-listProducts" id="cart-listProducts">
                     <div class="cart-product">
                         <span class="descricao-produto">Descrição:</span>
                         <span id="produtoNome"></span>
                     </div>
                     <div class="cart-qntd">
                         <span class="qntd-produto">Quantidade de Centos:</span>
-                        <span id="produtoQntd"><input type="number" id="products-number" value="0" placeholder="0"></span>
+                        <span id="produtoQntd"></span>
                     </div>
                     <div class="cart-price">
                         <span class="valor-produto">Valor Total:</span>
                         <span id="produtoValor"></span>
                     </div>
                 </div>
-                <button id="finaliza-compra">Finalizar Compra</button>
+                <div class="buttons">
+                    <button id="finaliza-compra">Finalizar Compra</button>
+                    <button id="remove-product">Remover</button>
+                </div>
             </div>
         </div>
     </header>
@@ -113,7 +116,7 @@
                     <div class="cards-container">
                         <div class="cards">
                             <img src="./images/brigadeiro.jpg" alt="brigadeiro">
-                            <div class="produto" id="produto">
+                            <div class="produto" id="0">
                                 <h5>Brigadeiro Belga</h5>
                                 <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-1">Ver detalhes</a>
@@ -122,7 +125,7 @@
                         </div>
                         <div class="cards">
                             <img src="./images/pacoca.jpg" alt="brigadeiro-paçoca">
-                            <div class="produto" id="produto">
+                            <div class="produto" id="1">
                                 <h5>Brigadeiro de Paçoca</h5>
                                 <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-2">Ver detalhes</a>
@@ -131,7 +134,7 @@
                         </div>
                         <div class="cards">
                             <img src="./images/copinhos.jpg" alt="copinhos">
-                            <div class="produto" id="produto">
+                            <div class="produto" id="2">
                                 <h5>Copinhos de Chocolate</h5>
                                 <h6>R$ 100,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-3">Ver detalhes</a>
@@ -140,7 +143,7 @@
                         </div>
                         <div class="cards">
                             <img src="./images/bolacha.jpg" alt="bolacha">
-                            <div class="produto" id="produto">
+                            <div class="produto" id="3">
                                 <h5>Brigadeiro de Oreo</h5>
                                 <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-4">Ver detalhes</a>
@@ -149,7 +152,7 @@
                         </div>
                         <div class="cards">
                             <img src="./images/maracuja.jpg" alt="brigadeiro-maracuja">
-                            <div class="produto" id="produto">
+                            <div class="produto" id="4">
                                 <h5>Brigadeiro de Maracujá</h5>
                                 <h6>R$ 90,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-5">Ver detalhes</a>
@@ -158,7 +161,7 @@
                         </div>
                         <div class="cards">
                             <img src="./images/frutas.jpg" alt="brigadeiros-frutas">
-                            <div class="produto" id="produto">
+                            <div class="produto" id="5">
                                 <h5>Brigadeiros Gourmet</h5>
                                 <h6>R$ 100,00 o Cento</h6>
                                 <a class="btn" data-bs-toggle="modal" data-bs-target="#modal-6">Ver detalhes</a>
