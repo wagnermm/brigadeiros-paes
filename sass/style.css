@@ -76,13 +76,13 @@ header .cart #cart-btn .cart-status {
 header .cart .cart-list {
   position: fixed;
   top: 0;
-  left: calc(100% - 300px);
+  left: calc(100% - 400px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 300px;
-  height: 50vh;
+  width: 400px;
+  height: auto;
   padding: 1rem;
   background-color: #fff;
   z-index: 2;
@@ -127,6 +127,7 @@ header .cart .cart-list .cart-listProducts {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 2rem;
 }
 header .cart .cart-list .cart-listProducts .cart-product, header .cart .cart-list .cart-listProducts .cart-qntd, header .cart .cart-list .cart-listProducts .cart-price {
   display: flex;
@@ -162,6 +163,17 @@ header .cart .cart-list .cart-listProducts .cart-price #produtoValor {
   width: auto;
   font-size: 1.6rem;
   font-weight: bolder;
+}
+header .cart .cart-list .cart-listProducts .cart-img {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+header .cart .cart-list .cart-listProducts .cart-img img {
+  width: 30%;
 }
 header .cart .cart-list .buttons {
   width: 100%;

@@ -73,13 +73,13 @@ header {
         .cart-list {
             position: fixed;
             top: 0;
-            left: calc(100% - 300px);
+            left: calc(100% - 400px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            width: 300px;
-            height: 50vh;
+            width: 400px;
+            height: auto;
             padding: 1rem;
             background-color: #fff;
             z-index: 2;
@@ -123,6 +123,7 @@ header {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: flex-start;
+                padding: 2rem;
                 .cart-product, .cart-qntd ,.cart-price {
                     display: flex;
                     flex-direction: row;
@@ -162,6 +163,17 @@ header {
                         width: auto;
                         font-size: 1.6rem;
                         font-weight: bolder;
+                    }
+                }
+                .cart-img {
+                    width: auto;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 0.5rem;
+                    img {
+                        width: 30%;
                     }
                 }
             }
