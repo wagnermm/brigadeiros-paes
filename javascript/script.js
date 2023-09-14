@@ -26,6 +26,7 @@ let productName = document.querySelector('#produtoNome');
 let productQntd = document.querySelector('#produtoQntd');
 let productValor = document.querySelector('#produtoValor');
 let productImg = document.querySelector('#produtoImg');
+let removeProductButton = document.querySelector('#remove-product');
 let btnAdicionaItem = document.getElementsByClassName('adiciona-produto');
 let num = 0;
 
@@ -77,56 +78,63 @@ let btn6 = document.querySelector('#productSelect-6').addEventListener('click', 
     productImg.innerHTML = "<img src='images/frutas.jpg'>"
 });
 
+
 // Remove produto
-function ready() {
-    const removeProductButton = document.querySelectorAll('#remove-product');
-    for(var i = 0; i < removeProductButton; i++) {
-        removeProductButton[i].addEventListener('click', function(event) {
-            event.target.parentElement.parentElement.remove();
-            updateTotal()
-        });
+removeProductButton.addEventListener('click', function() {
+    for(var i = 0; i < allProducts.length; i++) {
+        if(allProducts) {
+            productName.remove();
+            productQntd.remove();
+            productValor.remove();
+            productImg.remove();
+        };
     };
-};
+});
 
 
-/* Lista Objetos
+// Lista Objetos
 let allProducts = [
     {
         id: 0,
         name: 'Brigadeiro Belga',
         qntd: 1,
-        price: [90.00]
+        price: [90.00],
+        image: "<img src='images/brigadeiro.jpg'>"
     },
     {
         id: 1,
         name: 'Brigadeiro de Paçoca',
         qntd: 1,
-        price: [90.00]
+        price: [90.00],
+        image: "<img src='images/pacoca.jpg'>"
     },
     {
         id: 2,
         name: 'Copinhos de Chocolate',
         qntd: 1,
-        price: [100.00]
+        price: [100.00],
+        image: "<img src='images/copinhos.jpg'>"
     },
     {
         id: 3,
         name: 'Brigadeiro de Óreo',
         qntd: 1,
-        price: [90.00]
+        price: [90.00],
+        image: "<img src='images/bolacha.jpg'>"
     },
     {
         id: 4,
         name: 'Brigadeiro de Maracujá',
         qntd: 1,
-        price: [90.00]
+        price: [90.00],
+        image: "<img src='images/maracuja.jpg'>"
     },
     {
         id: 5,
         name: 'Brigadeiros Gourmet',
         qntd: 1,
-        price: [100.00]
+        price: [100.00],
+        image: "<img src='images/frutas.jpg'>"
     }
 ];
 
-*/

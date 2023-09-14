@@ -173,7 +173,8 @@ header .cart .cart-list .cart-listProducts .cart-img {
   gap: 0.5rem;
 }
 header .cart .cart-list .cart-listProducts .cart-img img {
-  width: 30%;
+  width: 80px;
+  height: 80px;
 }
 header .cart .cart-list .buttons {
   width: 100%;
